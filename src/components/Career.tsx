@@ -12,42 +12,59 @@ const Career = () => {
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
+
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Secondary (12th), CBSE</h4>
-                <h5>XYZ Public School, Delhi</h5>
+                <h4>HSC – Higher Secondary Certificate</h4>
+                <h5>Grace Matric Hr Sec School, Madurai</h5>
               </div>
-              <h3>2021-2022</h3>
+              <h3>2020</h3>
             </div>
             <p>
-              Completed 12th grade with 88%. Developed a strong foundation in core subjects.
+              Completed Higher Secondary Certificate. Built a strong foundation in core academic subjects.
             </p>
           </div>
+
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>B.Tech in CSE</h4>
-                <h5>ABC Institute of Technology, Delhi</h5>
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <h5>The American College, Madurai</h5>
               </div>
-              <h3>2022-2026</h3>
+              <h3>2020–2023</h3>
             </div>
             <p>
-              Pursuing Bachelor of Technology with a CGPA of 8.5/10. Core subjects: Data Structures, Operating Systems, DBMS. Actively participating in hackathons and exploring new technologies.
+              Gained strong foundations in programming, data structures, and web technologies. Developed projects including a Pet Clinic Management System and a Patient Food Recommendation System.
             </p>
           </div>
+
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Software Development Intern</h4>
-                <h5>Tech Solutions Pvt. Ltd.</h5>
+                <h4>Master of Computer Applications (MCA)</h4>
+                <h5>Mepco Schlenk Engineering College, Sivakasi</h5>
               </div>
-              <h3>May-Jul 2025</h3>
+              <h3>2024–2026</h3>
             </div>
             <p>
-              Assisted in developing REST APIs using Node.js. Worked on frontend features using React.js. Collaborated with team using Git for version control.
+              Pursuing MCA focused on advanced software development, databases, and system design. Actively exploring full-stack technologies and participating in technical events.
             </p>
           </div>
+
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Intern – Web & AI Development</h4>
+                <h5>WAIOZ Consultanc Services Pvt Ltd,Madurai</h5>
+              </div>
+              <h3>2026</h3>
+            </div>
+            <p>
+              Worked on frontend and backend web development tasks. Contributed to building responsive UI components, RESTful API integrations using React.js and Node.js, and developed AI-based features leveraging large language models.
+            </p>
+          </div>
+
         </div>
       </div>
     </div>

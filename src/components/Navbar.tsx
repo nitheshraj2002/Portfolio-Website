@@ -36,6 +36,19 @@ const Navbar = () => {
     });
     gsap.ticker.lagSmoothing(0);
 
+    // Keyboard support for scrolling (especially useful when 3D scenes steal focus)
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!lenis) return;
+      if (e.key === "ArrowUp") {
+        e.preventDefault();
+        lenis.scrollTo(Math.max(0, lenis.targetScroll - window.innerHeight * 0.1));
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        lenis.scrollTo(Math.min(document.documentElement.scrollHeight - window.innerHeight, lenis.targetScroll + window.innerHeight * 0.1));
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+
     // Nav link click → smooth scroll to section
     let links = document.querySelectorAll(".header ul a");
     links.forEach((elem) => {
@@ -54,6 +67,7 @@ const Navbar = () => {
     });
 
     return () => {
+      window.removeEventListener("keydown", handleKeyDown);
       lenis?.destroy();
       lenis = null;
       gsap.ticker.remove((time) => {
@@ -66,14 +80,16 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          CB
+          NR
         </a>
         <a
-          href="mailto:collegebuddy.engineer@gmail.com"
+          href="mailto:nitheshwwe007@gmail.com
+"
           className="navbar-connect"
           data-cursor="disable"
         >
-          collegebuddy.engineer@gmail.com
+         nitheshwwe007@gmail.com
+
         </a>
         <ul>
           <li>

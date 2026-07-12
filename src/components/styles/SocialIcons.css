@@ -53,14 +53,33 @@
   width: auto;
   text-wrap: nowrap;
   letter-spacing: 4px;
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 600;
-  color: #5e5e5e;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
   cursor: pointer;
   transition: 0.5s;
   transform-origin: left bottom;
   transform: translateX(100%) rotateZ(-90deg);
+  background: linear-gradient(
+    90deg,
+    #0591e2 0%,
+    #f8d32f 35%,
+    #ffffff 46%,
+    #f304cb 50%,
+    #c7054f 54%,
+    #ff8d2f 65%,
+    #0310c7 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: currentTravel 2.2s ease-in-out infinite alternate;
+}
+
+@keyframes currentTravel {
+  0%   { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
 }
 .resume-button:hover {
   color: #fff;

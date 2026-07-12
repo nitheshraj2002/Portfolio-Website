@@ -6,44 +6,75 @@ const Contact = () => {
     <div className="contact-section section-container" id="contact">
       <div className="contact-container">
         <h3>Contact</h3>
+
         <div className="contact-flex">
+          
+          {/* LEFT SIDE */}
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:collegebuddy.engineer@gmail.com" data-cursor="disable">
-                collegebuddy.engineer@gmail.com
+              <a href="mailto:nitheshwwe007@gmail.com" data-cursor="disable">
+                nitheshwwe007@gmail.com
               </a>
             </p>
+
+            <h4>Phone</h4>
+            <p>+91 93612 98438</p>
+
             <h4>Education</h4>
-            <p>B.Tech in Computer Science Engineering</p>
+            <p>Master of Computer Applications (MCA)</p>
           </div>
+
+          {/* MIDDLE SIDE */}
           <div className="contact-box">
             <h4>Social</h4>
+
             <a
-              href="https://github.com/collegebuddy-dev"
+              href="https://github.com/nitheshraj2002"
               target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
               Github <MdArrowOutward />
             </a>
+
             <a
-              href="https://linkedin.com/in/collegebuddy"
+              href="https://linkedin.com/in/nithesh-raj-a9a192327"
               target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              Linkedin <MdArrowOutward />
+              LinkedIn <MdArrowOutward />
             </a>
+
+            
+            <a
+              href="https://instagram.com/nitheshwwe007"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cursor="disable"
+              className="contact-social"
+            >
+              Insta <MdArrowOutward />
+            </a>
+            
+          
+
           </div>
+
+          {/* RIGHT SIDE */}
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>College Buddy</span>
+              Designed and Developed <br /> by <span>Nithesh Raj</span>
             </h2>
+
             <h5>
               <MdCopyright /> 2026
             </h5>
           </div>
+
         </div>
       </div>
     </div>

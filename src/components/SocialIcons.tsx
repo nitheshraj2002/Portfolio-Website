@@ -1,11 +1,14 @@
 import {
   FaGithub,
   FaLinkedinIn,
+  FaInstagram,
+  FaXTwitter,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
+import { Link } from "react-router-dom";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -58,22 +61,34 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com/collegebuddy-dev" target="_blank">
+          <a href="https://github.com/nitheshraj2002" target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://linkedin.com/in/collegebuddy" target="_blank">
+          <a href="https://linkedin.com/in/nithesh-raj-a9a192327" target="_blank">
             <FaLinkedinIn />
           </a>
         </span>
+        <span>
+          <a href="https://instagram.com/nitheshwwe007" target="_blank">
+            <FaInstagram />
+          </a>
+        </span>
+        <span>
+          <a href="https://x.com/Nithesh1012/media" target="_blank">
+            <FaXTwitter />
+          </a>
+        </span>
       </div>
-      <a className="resume-button" href="#">
+
+      {/* ✅ Changed <a> to <Link> to navigate to ProfileView */}
+      <Link className="resume-button" to="/portfolio">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
         </span>
-      </a>
+      </Link>
     </div>
   );
 };
